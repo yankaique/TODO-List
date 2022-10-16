@@ -1,3 +1,4 @@
 import { Header } from "./Header";
+import { TaskList } from "./TaskList";
 
-export { Header };
+export { Header, TaskList };

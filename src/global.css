@@ -13,6 +13,7 @@
   --blue-700: #1e6f9f;
   --red-400: #e25858;
 
+  --text-xsmaller: 0.75rem;
   --text-smaller: 0.875rem;
   --text-regular: 1rem;
 
@@ -32,7 +33,7 @@
 }
 
 body {
-  background: var(--gray-400);
+  background: var(--gray-600);
   color: var(--gray-100);
   -webkit-font-smoothing: antialiased;
 }

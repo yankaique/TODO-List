@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from "react";
-import { Header } from "./components";
+import { Header, TaskList } from "./components";
 import { PlusCircle } from "phosphor-react";
 import style from "./App.module.css";
 
@@ -30,6 +30,9 @@ function App() {
           </button>
         </section>
       </header>
+      <main>
+        <TaskList />
+      </main>
     </div>
   );
 }

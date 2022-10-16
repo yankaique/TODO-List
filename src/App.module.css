@@ -4,6 +4,13 @@
   flex-direction: column;
 }
 
+.container main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+}
+
 .listInformation {
   display: flex;
   gap: 8px;
@@ -48,5 +55,9 @@
 
   .listInformation button {
     width: 100%;
+  }
+
+  .container main {
+    margin-top: calc(64px * 3);
   }
 }

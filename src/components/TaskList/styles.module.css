@@ -1,0 +1,51 @@
+.container {
+  width: 736px;
+}
+
+.container section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.container hr {
+  margin-top: 24px;
+  color: var(--gray-400);
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--gray-400);
+  width: 100%;
+}
+
+.informationWithTask {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.informationWithTask h3 {
+  font-size: var(--text-smaller);
+}
+
+#blueText {
+  color: var(--blue-100);
+}
+
+#purpleText {
+  color: var(--purple-100);
+}
+
+.informationWithTask > div {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 100%;
+  width: 19px;
+  height: 19px;
+
+  font-size: var(--text-xsmaller);
+  font-weight: 700;
+  padding-top: 2px;
+  text-align: center;
+}
