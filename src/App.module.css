@@ -1,0 +1,52 @@
+.container header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.listInformation {
+  display: flex;
+  gap: 8px;
+  align-self: center;
+  position: absolute;
+  top: 170px;
+}
+
+.listInformation input {
+  width: 638px;
+  height: 54px;
+}
+
+.listInformation button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background-color: var(--blue-700);
+  color: var(--gray-100);
+  font-weight: 700;
+  width: 90px;
+  height: 52px;
+  border-radius: 8px;
+  transition: filter 0.3s;
+}
+
+.listInformation button:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+@media screen and (max-width: 800px) {
+  .listInformation {
+    flex-direction: column;
+  }
+
+  .listInformation input {
+    width: 100%;
+  }
+
+  .listInformation button {
+    width: 100%;
+  }
+}
