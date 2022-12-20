@@ -5,8 +5,10 @@ import style from "./App.module.css";
 
 function App() {
   const [taskName, setTaskName] = useState<string>("");
+  const [taskList, setTaskList] = useState<string[]>([]);
 
   const hadleGenerateNewTask = () => {
+    setTaskList([...taskList, taskName]);
     setTaskName("");
   };
 
@@ -22,6 +24,7 @@ function App() {
             value={taskName}
             onChange={handleSetNewTaskName}
             placeholder="Adicione uma nova tarefa"
+            name="add"
             type="text"
           />
           <button onClick={() => hadleGenerateNewTask()}>
@@ -31,7 +34,7 @@ function App() {
         </section>
       </header>
       <main>
-        <TaskList />
+        <TaskList taskList={taskList} />
       </main>
     </div>
   );

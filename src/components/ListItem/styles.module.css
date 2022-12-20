@@ -1,0 +1,27 @@
+.container {
+  background: var(--gray-400);
+  min-height: 72px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 0.5fr 10fr 0.1fr;
+
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.container input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  outline: 3px solid var(--blue-100);
+
+}
+
+.container input[type="radio"]:checked {
+  accent-color: var(--purple-700);
+}
+
+.container p {
+  word-break: break-word;
+  text-align: start;
+}

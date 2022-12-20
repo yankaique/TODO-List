@@ -1,7 +1,12 @@
+import { ListItem } from "../ListItem";
 import { NoTask } from "../NoTask";
 import style from "./styles.module.css";
 
-export function TaskList() {
+interface ITaskListProps {
+  taskList: string[];
+}
+
+export function TaskList({ taskList }: ITaskListProps) {
   return (
     <div className={style.container}>
       <section>
@@ -16,8 +21,12 @@ export function TaskList() {
         </div>
       </section>
       <hr />
-      <section>
-        <NoTask />
+      <section className={style.taskList}>
+        {taskList.length === 0 ? (
+          <NoTask />
+        ) : (
+          taskList.map((props) => <ListItem key={props} name={props} />)
+        )}
       </section>
     </div>
   );
