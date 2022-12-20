@@ -7,6 +7,11 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
+  margin-top: 24px;
+}
+
+.container section div + div {
+  margin-top: 12px;
 }
 
 .container hr {

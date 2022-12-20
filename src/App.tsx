@@ -15,6 +15,11 @@ function App() {
   const handleSetNewTaskName = (event: ChangeEvent<HTMLInputElement>) =>
     setTaskName(event.target.value);
 
+  const handleRemoveTask = (value: string) => {
+    const newList = taskList.filter(task => value !== task);
+    setTaskList(newList);
+  }
+
   return (
     <div className={style.container}>
       <header>
@@ -34,7 +39,7 @@ function App() {
         </section>
       </header>
       <main>
-        <TaskList taskList={taskList} />
+        <TaskList taskList={taskList} removeTaskList={handleRemoveTask}/>
       </main>
     </div>
   );

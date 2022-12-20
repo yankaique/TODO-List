@@ -14,7 +14,6 @@
   width: 24px;
   height: 24px;
   outline: 3px solid var(--blue-100);
-
 }
 
 .container input[type="radio"]:checked {
@@ -24,4 +23,8 @@
 .container p {
   word-break: break-word;
   text-align: start;
+}
+
+.container svg {
+  cursor: pointer;
 }
